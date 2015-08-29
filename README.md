@@ -1,28 +1,8 @@
-IMPORTANT: THIS PROJECT NEEDS A NEW MAINTAINER AND A PROPER MAILING LIST.
+This fork of the genalg package is work in progress and so far only
+modifies the rbga.bin.R function:
 
-    I am not actively using this code myself, and (sadly) just do not have time to
-    maintain it. Yet, it is clearly used a lot. If someone want to act as the next
-    Dr. Who [0], please contact me. Various people already showed interest, and
-    this needs organization too.
-    
-    Egon Willighagen
-
-0.http://blogs.ch.cam.ac.uk/pmr/2009/06/06/the-doctor-who-model-of-open-source/
-
-Mailing list
-------------
-
-http://groups.google.co.uk/d/forum/genalg-discuss
-
-Source code
------------
-
-Source code of the genalg CRAN package:
-
-  http://cran.r-project.org/web/packages/genalg/
-
-Copyright and License
----------------------
-
-License: GPL v2 or later.
-
+- works with zeroToOneRatio < 1
+- can set the zeroToOneRatio in later generations to the zeroToOneRatio of the best chromosome of previous generations automatically
+- can plot the above mentioned process while the function is running
+- can save the population to disk periodically
+- can stop the algorithm if a specified time limit is reached
